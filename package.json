@@ -1,0 +1,23 @@
+{
+  "name": "my-first-server",
+  "version": "0.0.1",
+  "description": "",
+  "homepage": "https://github.com/mdmahadih673/my-first-server#readme",
+  "bugs": {
+    "url": "https://github.com/mdmahadih673/my-first-server/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdmahadih673/my-first-server.git"
+  },
+  "license": "(ISC)",
+  "author": "mahadi",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}
