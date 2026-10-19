@@ -1,6 +1,13 @@
 import express from 'express'
+import cors from 'cors'
+
+
+
 const app = express()
 const PORT = process.env.PORT || 5000
+
+app.use(cors())
+app.use(express.json())
 
 app.get('/', (req, res) => {
     res.send('hello world')
@@ -58,6 +65,12 @@ app.get('/about', (req, res) => {
 
 app.get('/deshbord', (req, res) => {
     res.send(users)
+})
+
+app.post('/deshbord', (req, res) => {
+    console.log('data from req', req.body);
+
+    res.send({ success: true, message: "User added" })
 })
 
 app.listen(PORT, () => {
