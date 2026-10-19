@@ -69,6 +69,9 @@ app.get('/deshbord', (req, res) => {
 
 app.post('/deshbord', (req, res) => {
     console.log('data from req', req.body);
+    const newUser = req.body
+    newUser.id = users.length + 1
+    users.push(newUser)
 
     res.send({ success: true, message: "User added" })
 })
